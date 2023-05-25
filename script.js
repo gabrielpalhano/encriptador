@@ -54,3 +54,11 @@ function desencriptar(stringDesencriptada) {
 
     return stringDesencriptada;
 }
+
+//COPIAR
+
+function copiar() {
+    navigator.clipboard.writeText(msg.value).then(() => {
+        alert(`O texto ${msg.value} copiado para a área de transferência!`)
+    })
+}
